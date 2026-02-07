@@ -134,3 +134,75 @@ This will create all tables (users, products, carts, product_images, etc.)
 
 Project by: Jayesh B. Gawade
 GitHub: https://github.com/jayeshgwd580/onlinemart.git
+
+---
+
+<h1>Online Mart - API Documentation</h1>
+
+## 1. User API's
+    
+    a) List Users
+        Method: GET
+        URL: {{base_url}}/api/users
+        Headers:
+        Authorization: Bearer {{user_token}} (if using token auth)
+        Description: Fetch all users
+
+    b) Create User
+        Method: POST
+        URL: {{base_url}}/api/users
+        body: x-www-form-urlencoded or raw JSON:
+            {
+                "name": "test user",
+                "email": "testuser@test.com",
+                "password": "12345678",
+                "type": "user",
+                "permissions": {"delete":true,"edit":true}
+            }
+
+    c) Update User
+        Method: PUT
+        URL: {{base_url}}/api/users/{id}
+        Body (raw JSON):
+            {
+                "name": "new test user",
+                "type": "user",
+                "permissions": {"delete":true,"edit":true}
+            }
+
+    d) Delete User
+        Method: DELETE
+        URL: {{base_url}}/api/users/{id}
+
+## 2. Product API's
+
+    a) List Products
+        Method: GET
+        URL: {{base_url}}/api/products
+
+    b) Get Product by ID
+        Method: GET
+        URL: {{base_url}}/api/products/{id}
+
+    c) Create Product
+        Method: POST
+        URL: {{base_url}}/api/products
+        Body (form-data for images):
+            name: Product Name
+            price: 100
+            user_id: 1
+            stock: 5
+            images[]: (choose file)
+
+    d) Update Product
+        Method: PUT
+        URL: {{base_url}}/api/products/{id}
+        Body (JSON or form-data):
+            name: Updated Name
+            price: 120
+
+    e) Delete Product
+        Method: DELETE
+        URL: {{base_url}}/api/products/{id}
+          Normal user → only own products
+          Admin → all products
