@@ -17,8 +17,10 @@ Before starting, make sure you have the following installed on your system:
 
 ## 2. Clone the Repository
 **Open your terminal and run:** <br>
-   git clone https://github.com/jayeshgwd580/onlinemart.git <br>
-   cd onlinemart
+    git clone https://github.com/jayeshgwd580/onlinemart.git <br>
+    cd onlinemart
+
+---
 
 ## 3. Install Dependencies
     composer install
@@ -27,6 +29,8 @@ Before starting, make sure you have the following installed on your system:
 
      npm install
      npm run dev
+
+---
 
 ## 4. Environment Setup
 
@@ -41,8 +45,12 @@ Before starting, make sure you have the following installed on your system:
     DB_USERNAME=root
     DB_PASSWORD=your_db_password
 
+---
+
 ## 5. Generate Laravel application key:
     php artisan key:generate
+
+---
 
 ## 6. Database Setup
    **Create a new database:** <br>
@@ -53,9 +61,13 @@ Before starting, make sure you have the following installed on your system:
 
 This will create all tables (users, products, carts, product_images, etc.)
 
+---
+
 ## 7. Storage Setup
    **Link the storage folder for product images:** <br>
       php artisan storage:link
+
+---
 
 ## 8. Running the Project
    **Start the local development server:** <br>
@@ -64,9 +76,13 @@ This will create all tables (users, products, carts, product_images, etc.)
    **Visit the project in browser:** <br>
     -- http://127.0.0.1:8000
 
+---
+
 ## 9. Default User
     Register a new user using the Register page.
     Admin user can be added manually in the database if needed.
+
+---
 
 ## 10. Features
     User authentication (login/register)
@@ -78,31 +94,38 @@ This will create all tables (users, products, carts, product_images, etc.)
     Session-based login
     Role-based access (normal user vs admin)
 
+---
+
 ## 11 Adding Products
     Login as a user → Go to Add Product
     Fill product details + upload images
     Click Submit → Product saved in database
+
+---
 
 ## 12 Cart Functionality
     user can click Add to Cart
     Cart table stores user_id, product_id, and quantity
     User can manage all products in cart
 
+---
+
 ## 13 Notes
     Do not upload .env file to GitHub
     All sensitive info is in .env
     Public storage files (images) are linked via php artisan storage:link
 
+---
+
 ## 14 Troubleshooting
    **Images not showing** <br>
-
-      Run php artisan storage:link and check product_images table
+        Run php artisan storage:link and check product_images table
    **404 error on route** <br>
-
-      Check web.php routes and ensure middleware auth applied
+        Check web.php routes and ensure middleware auth applied
    **Database errors** <br>	
+        Check .env DB settings and run php artisan migrate:fresh if needed
 
-      Check .env DB settings and run php artisan migrate:fresh if needed
+---
 
 ## 15 Contribution
     Fork the repository
