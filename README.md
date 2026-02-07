@@ -12,6 +12,7 @@ Before starting, make sure you have the following installed on your system:
 - **Node.js & npm** (if you want to compile assets, optional)  
 - **Git**  
 - **Laravel CLI** (optional but recommended)
+- **Admin credentials** (username: jayesh@test.com password: 12345678)
 
 ---
 
