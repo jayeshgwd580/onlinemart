@@ -1,4 +1,4 @@
-<center><h1>Online Mart</h1></center>
+<h1>Online Mart</h1>
 <h5>Welcome to OnlineMart!<h5>
 <p>This document guides you to **clone, set up, and run** the OnlineMart project locally.</p>
 
@@ -22,9 +22,9 @@ Open your terminal and run:
 ```bash
 git clone https://github.com/jayeshgwd580/onlinemart.git
 cd onlinemart
+```bash
 
-
-3. Install Dependencies
+- **Install Dependencies**
   -- composer install
  
  This will install all PHP dependencies.
