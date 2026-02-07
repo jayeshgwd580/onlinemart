@@ -1,6 +1,6 @@
 <h1>Online Mart</h1>
 <h5>Welcome to OnlineMart!<h5>
-<p>This document guides you to **clone, set up, and run** the OnlineMart project locally.</p>
+<p>This document guides you to <strong>clone, set up, and run</strong> the OnlineMart project locally.</p>
 
 ## 1. Requirements
 
@@ -16,21 +16,21 @@ Before starting, make sure you have the following installed on your system:
 ---
 
 ## 2. Clone the Repository
-**Open your terminal and run:**
-    git clone https://github.com/jayeshgwd580/onlinemart.git
+**Open your terminal and run:** <br>
+    git clone https://github.com/jayeshgwd580/onlinemart.git <br>
     cd onlinemart
 
 ## 3. Install Dependencies
-  -- composer install
+  composer install
  
  **This will install all PHP dependencies.**
-   -- npm install
-   -- npm run dev
+   npm install
+   npm run dev
 
 ## 4. Environment Setup
 
-  **Copy the example environment file:**
-    -- cp .env.example .env
+  **Copy the example environment file:** <br>
+    cp .env.example .env
 
     Open .env file and set your local database configuration:
     DB_CONNECTION=mysql
@@ -41,25 +41,26 @@ Before starting, make sure you have the following installed on your system:
     DB_PASSWORD=your_db_password
 
 ## 5. Generate Laravel application key:
-    -- php artisan key:generate
+    php artisan key:generate
 
 ## 6. Database Setup
-   **Create a new database:**
-     -- CREATE DATABASE onlinemart;
+   **Create a new database:** <br>
+      CREATE DATABASE onlinemart;
 
-   **Run migrations:**
-     -- php artisan migrate 
-     This will create all tables (users, products, carts, product_images, etc.)
+   **Run migrations:** <br>
+      php artisan migrate 
+
+    This will create all tables (users, products, carts, product_images, etc.)
 
 ## 7. Storage Setup
-   **Link the storage folder for product images:**
-    -- php artisan storage:link
+   **Link the storage folder for product images:** <br
+      php artisan storage:link
 
 ## 8. Running the Project
-   **Start the local development server:**
-    -- php artisan serve
+   **Start the local development server:** <br
+      php artisan serve
 
-   **Visit the project in browser:**
+   **Visit the project in browser:** <br
     -- http://127.0.0.1:8000
 
 ## 9. Default User
@@ -92,11 +93,11 @@ Before starting, make sure you have the following installed on your system:
     Public storage files (images) are linked via php artisan storage:link
 
 ## 14 Troubleshooting
-   **Images not showing**	
+   **Images not showing** <br>
         Run php artisan storage:link and check product_images table
-   **404 error on route**	
+   **404 error on route** <br>
         Check web.php routes and ensure middleware auth applied
-   **Database errors**	
+   **Database errors** <br>	
         Check .env DB settings and run php artisan migrate:fresh if needed
 
 ## 15 Contribution
