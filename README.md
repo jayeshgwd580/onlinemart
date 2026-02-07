@@ -60,6 +60,7 @@ Before starting, make sure you have the following installed on your system:
       php artisan migrate 
 
 This will create all tables (users, products, carts, product_images, etc.)
+Or else you can directly import /database/onlinemart.sql file into your database
 
 ---
 

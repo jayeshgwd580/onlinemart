@@ -44,6 +44,14 @@ Route::get('/products/delete/{id}',[ProductUIController::class,'delete']);
 Route::get('/product/create',[ProductUIController::class,'create']);
 Route::post('/product/store',[ProductUIController::class,'store']);
 
+
 Route::middleware('auth')->group(function(){
+    // Add to cart
     Route::post('/cart/add', [CartController::class,'addToCart'])->name('cart.add');
+
+    // List cart items
+    Route::get('/cart', [CartController::class,'listCart'])->name('cart.list');
+
+    // Delete cart item
+    Route::delete('/cart/delete/{id}', [CartController::class,'deleteCart'])->name('cart.delete');
 });
