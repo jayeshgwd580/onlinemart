@@ -17,15 +17,16 @@ Before starting, make sure you have the following installed on your system:
 
 ## 2. Clone the Repository
 **Open your terminal and run:** <br>
-    git clone https://github.com/jayeshgwd580/onlinemart.git <br>
-    cd onlinemart
+   git clone https://github.com/jayeshgwd580/onlinemart.git <br>
+   cd onlinemart
 
 ## 3. Install Dependencies
-  composer install
+    composer install
  
- **This will install all PHP dependencies.**
-   npm install
-   npm run dev
+ **This will install all PHP dependencies.** <br>
+
+     npm install
+     npm run dev
 
 ## 4. Environment Setup
 
@@ -50,17 +51,17 @@ Before starting, make sure you have the following installed on your system:
    **Run migrations:** <br>
       php artisan migrate 
 
-    This will create all tables (users, products, carts, product_images, etc.)
+This will create all tables (users, products, carts, product_images, etc.)
 
 ## 7. Storage Setup
-   **Link the storage folder for product images:** <br
+   **Link the storage folder for product images:** <br>
       php artisan storage:link
 
 ## 8. Running the Project
-   **Start the local development server:** <br
+   **Start the local development server:** <br>
       php artisan serve
 
-   **Visit the project in browser:** <br
+   **Visit the project in browser:** <br>
     -- http://127.0.0.1:8000
 
 ## 9. Default User
