@@ -95,11 +95,14 @@ This will create all tables (users, products, carts, product_images, etc.)
 
 ## 14 Troubleshooting
    **Images not showing** <br>
-        Run php artisan storage:link and check product_images table
+
+      Run php artisan storage:link and check product_images table
    **404 error on route** <br>
-        Check web.php routes and ensure middleware auth applied
+
+      Check web.php routes and ensure middleware auth applied
    **Database errors** <br>	
-        Check .env DB settings and run php artisan migrate:fresh if needed
+
+      Check .env DB settings and run php artisan migrate:fresh if needed
 
 ## 15 Contribution
     Fork the repository
